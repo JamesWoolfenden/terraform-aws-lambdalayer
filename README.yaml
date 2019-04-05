@@ -57,10 +57,13 @@ usage: |-
 
   ```hcl
   module "lambdalayer" {
-    source                 = "jameswoolfenden/lambdalayer/aws"
-    common_tags            = "${var.common_tags}"
-    name                   = "${var.name}"
+    source      = "../../"
+    name        = "${var.name}"
+    versionpath = "${var.versionpath}"
+    s3_bucket   = "${var.s3_bucket}"
+    version     = "${var.version}"
   }
+
   ```
 
 include:
