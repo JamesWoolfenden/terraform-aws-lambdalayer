@@ -1,5 +1,6 @@
-## Makefile Targets
-```
+# Makefile Targets
+
+```cli
 Available targets:
 
   help                                Help screen
