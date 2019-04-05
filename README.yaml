@@ -1,0 +1,73 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: terraform-aws-lambdalayer
+
+# Tags of this project
+tags:
+  - aws
+  - terraform
+  - terraform-modules
+  - lambdalayer
+
+# Categories of this project
+categories:
+  - terraform-modules/CICD
+
+# Logo for this project
+#logo: docs/slalom-logo.png
+
+# License of this project
+license: "APACHE2"
+
+# Copyrights
+copyrights:
+  - name: "Slalom, LLC"
+    url: "https://slalom.com"
+    year: "2019"
+
+# Canonical GitHub repo
+github_repo: jameswoolfenden/terraform-aws-lambdalayer
+
+# Badges to display
+badges:
+  - name: "Build Status"
+    image: "https://api.travis-ci.com/JamesWoolfenden/terraform-aws-lambdalayer.svg?branch=master"
+    url: "https://travis-ci.com/JamesWoolfenden/terraform-aws-lambdalayer"
+  - name: "Latest Release"
+    image: "https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-lambdalayer.svg"
+    url: "https://github.com/JamesWoolfenden/terraform-aws-lambdalayer/releases/latest"
+
+related:
+  - name: "terraform-aws-codecommit"
+    description: "Storing ones code"
+    url: "https://github.com/jameswoolfenden/terraform-aws-lambdalayer"
+
+# Short description of this project
+description: |-
+  Terraform module to provision an AWS lambda layer from a software artifact.
+
+# How to use this project
+usage: |-
+  Include this repository as a module in your existing terraform code:
+
+  ```hcl
+  module "lambdalayer" {
+    source                 = "jameswoolfenden/lambdalayer/aws"
+    common_tags            = "${var.common_tags}"
+    name                   = "${var.name}"
+  }
+  ```
+
+include:
+  - "docs/usage.md"
+  - "docs/terraform.md"
+
+# Contributors to this project
+contributors:
+  - name: "James Woolfenden"
+    github: "jameswoolfenden"
