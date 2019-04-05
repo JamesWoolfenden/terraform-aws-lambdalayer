@@ -1,47 +1,24 @@
-variable "description" {
-  description = "Description of the repository"
-}
-
-variable "projectroot" {
-  description = "The root project name"
-}
-
 variable "name" {
-  description = "The name of the build pipeline"
+  type        = "string"
+  description = "The name of the layer and Artifacts"
 }
 
-variable "force_artifact_destroy" {}
-
-variable "environment" {
-  type = "list"
+variable "compatible_runtimes" {
+  description = "The runtimes that this layer is compatible with"
+  default     = ["nodejs8.10"]
 }
 
-variable "build_timeout" {
-  description = "Timeout set for the build to run"
+variable "versionpath" {
+  type        = "string"
+  description = "The path in SSM where the latest version for this application is stored"
 }
 
-variable "sourcecode" {
-  type = "list"
+variable "version" {
+  type        = "string"
+  description = "The version of the artifact if supplied rather than dertermined from SSM"
+  default     = ""
 }
 
-variable "common_tags" {
-  type = "map"
-}
-
-variable "env" {
-  description = "environment name for ssm"
-}
-
-variable "reponame" {
-  type = "string"
-}
-
-variable "namespace_type" {}
-
-variable "packaging" {}
-
-variable "encryption_disabled" {}
-
-variable "type" {
+variable "s3_bucket" {
   type = "string"
 }

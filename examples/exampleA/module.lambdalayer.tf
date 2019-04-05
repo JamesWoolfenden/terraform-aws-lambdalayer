@@ -1,5 +1,7 @@
 module "lambdalayer" {
   source      = "../../"
-  common_tags = "${var.common_tags}"
   name        = "${var.name}"
+  versionpath = "${var.versionpath}"
+  s3_bucket   = "${var.s3_bucket}"
+  version     = "${var.version}"
 }

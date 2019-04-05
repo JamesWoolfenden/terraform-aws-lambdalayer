@@ -18,3 +18,7 @@ variable "version" {
   description = "The version of the artifact if supplied rather than dertermined from SSM"
   default     = ""
 }
+
+variable "s3_bucket" {
+  type = "string"
+}
