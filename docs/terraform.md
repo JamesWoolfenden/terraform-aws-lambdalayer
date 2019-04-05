@@ -17,3 +17,4 @@
 | layer_arn | The Amazon Resource Name (ARN) of the Lambda Layer without version. |
 | source_code_size | The size in bytes of the function .zip file |
 | version | This Lamba Layer version. |
+
