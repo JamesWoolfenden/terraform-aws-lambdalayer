@@ -16,11 +16,11 @@ variable "versionpath" {
 
 variable "package_version" {
   type        = string
-  description = "The version of the artifact if supplied rather than dertermined from SSM"
+  description = "The version of the Artifact if supplied rather than determined from SSM"
   default     = ""
 }
 
 variable "s3_bucket" {
   type        = string
-  description = "The raw name of an S3 bcuket without s3://"
+  description = "The raw name of an S3 bucket without s3://"
 }
