@@ -3,7 +3,7 @@
 
 # terraform-aws-lambdalayer
 
-[![Build Status](https://api.github.com/JamesWoolfenden/terraform-aws-lambdalayer/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-lambdalayer)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-lambdalayer/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-lambdalayer)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-lambdalayer.svg)](https://github.com/JamesWoolfenden/terraform-aws-lambdalayer/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
