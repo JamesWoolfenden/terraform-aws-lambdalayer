@@ -29,15 +29,25 @@ module "lambdalayer" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| compatible\_runtimes | The runtimes that this layer is compatible with | list | `[ "nodejs8.10" ]` | no |
-| name | The name of the layer and Artifacts | string | n/a | yes |
-| package\_version | The version of the Artifact if supplied rather than determined from SSM | string | `""` | no |
-| s3\_bucket | The raw name of an S3 bucket without s3:// | string | n/a | yes |
-| versionpath | The path in SSM where the latest version for this application is stored | string | n/a | yes |
+|------|-------------|------|---------|:--------:|
+| compatible\_runtimes | The runtimes that this layer is compatible with | `list` | <pre>[<br>  "nodejs8.10"<br>]</pre> | no |
+| name | The name of the layer and Artifacts | `string` | n/a | yes |
+| package\_version | The version of the Artifact if supplied rather than determined from SSM | `string` | `""` | no |
+| s3\_bucket | The raw name of an S3 bucket without s3:// | `string` | n/a | yes |
+| versionpath | The path in SSM where the latest version for this application is stored | `string` | n/a | yes |
 
 ## Outputs
 
@@ -100,8 +110,8 @@ under the License.
 [logo]: https://gist.githubusercontent.com/JamesWoolfenden/5c457434351e9fe732ca22b78fdd7d5e/raw/15933294ae2b00f5dba6557d2be88f4b4da21201/slalom-logo.png
 [website]: https://slalom.com
 [github]: https://github.com/jameswoolfenden
-[linkedin]: https://www.linkedin.com/company/slalom-consulting/
-[twitter]: https://twitter.com/Slalom
+[linkedin]: https://www.linkedin.com/in/jameswoolfenden/
+[twitter]: https://twitter.com/JimWoolfenden
 
 [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-lambdalayer&url=https://github.com/jameswoolfenden/terraform-aws-lambdalayer
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-lambdalayer&url=https://github.com/jameswoolfenden/terraform-aws-lambdalayer
