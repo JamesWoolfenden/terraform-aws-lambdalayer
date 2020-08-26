@@ -1,6 +1,5 @@
 #Makefile
 ifdef OS
-   RM   = $(powershell  -noprofile rm .\.terraform\modules -force -recurse)
    BLAT = $(powershell  -noprofile rm .\.terraform\ -force -recurse)
 else
    ifeq ($(shell uname), Linux)
@@ -17,13 +16,15 @@ init:
 	$(RM)
 	terraform init -reconfigure
 
-plan: init
+plan:
 	terraform plan -refresh=true
 
 p:
-	terraform plan -refresh=true | landscape
+	terraform plan -refresh=true
 
-build: init
+apply: build
+
+build:
 	terraform apply -auto-approve
 
 check: init
@@ -36,8 +37,8 @@ docs:
 	terraform-docs md . > README.md
 
 valid:
-	tflint
 	terraform fmt -check=true -diff=true
+	checkov -d . --external-checks-dir ../../checkov
 
 target:
 	@read -p "Enter Module to target:" MODULE;
@@ -45,4 +46,3 @@ target:
 
 purge:
 	$(BLAT)
-	terraform init -reconfigure
