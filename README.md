@@ -26,7 +26,6 @@ module "lambdalayer" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -34,23 +33,23 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name                | Description                                                             | Type     | Default                            | Required |
-| ------------------- | ----------------------------------------------------------------------- | -------- | ---------------------------------- | :------: |
-| compatible_runtimes | The runtimes that this layer is compatible with                         | `list`   | <pre>[<br> "nodejs8.10"<br>]</pre> |    no    |
-| name                | The name of the layer and Artifacts                                     | `string` | n/a                                |   yes    |
-| package_version     | The version of the Artifact if supplied rather than determined from SSM | `string` | `""`                               |    no    |
-| s3_bucket           | The raw name of an S3 bucket without s3://                              | `string` | n/a                                |   yes    |
-| versionpath         | The path in SSM where the latest version for this application is stored | `string` | n/a                                |   yes    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| compatible\_runtimes | The runtimes that this layer is compatible with | `list` | <pre>[<br>  "nodejs8.10"<br>]</pre> | no |
+| name | The name of the layer and Artifacts | `string` | n/a | yes |
+| package\_version | The version of the Artifact if supplied rather than determined from SSM | `string` | `""` | no |
+| s3\_bucket | The raw name of an S3 bucket without s3:// | `string` | n/a | yes |
+| versionpath | The path in SSM where the latest version for this application is stored | `string` | n/a | yes |
 
 ## Outputs
 
-| Name  | Description         |
-| ----- | ------------------- |
+| Name | Description |
+|------|-------------|
 | layer | - The Lambda Layer. |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
