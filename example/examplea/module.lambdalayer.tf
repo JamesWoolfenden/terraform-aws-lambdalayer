@@ -1,7 +1,6 @@
 module "lambdalayer" {
-  source          = "../../"
-  name            = var.name
-  versionpath     = var.versionpath
-  s3_bucket       = var.s3_bucket
-  package_version = var.package_version
+  source     = "../../"
+  s3_bucket  = var.s3_bucket
+  s3_key     = local.s3_key
+  layer_name = local.layer_name
 }
