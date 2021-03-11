@@ -1,6 +1,6 @@
 
 variable "compatible_runtimes" {
-  type        = list
+  type        = list(any)
   description = "The runtimes that this layer is compatible with"
   default     = ["nodejs8.10"]
 }

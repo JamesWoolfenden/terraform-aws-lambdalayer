@@ -42,11 +42,21 @@ No requirements.
 |------|---------|
 | aws | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_lambda_layer_version](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_layer_version) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| compatible\_runtimes | The runtimes that this layer is compatible with | `list` | <pre>[<br>  "nodejs8.10"<br>]</pre> | no |
+| compatible\_runtimes | The runtimes that this layer is compatible with | `list(any)` | <pre>[<br>  "nodejs8.10"<br>]</pre> | no |
 | layer\_name | Name of the layer | `string` | n/a | yes |
 | s3\_bucket | The raw name of an S3 bucket without s3:// | `string` | n/a | yes |
 | s3\_key | Path to file | `string` | n/a | yes |
@@ -56,7 +66,6 @@ No requirements.
 | Name | Description |
 |------|-------------|
 | layer | - The Lambda Layer. |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects

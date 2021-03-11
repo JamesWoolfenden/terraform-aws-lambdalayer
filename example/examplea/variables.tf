@@ -5,7 +5,7 @@ variable "name" {
 
 variable "compatible_runtimes" {
   description = "The runtimes that this layer is compatible with"
-  type        = list
+  type        = list(any)
 
   default = ["nodejs8.10"]
 }
