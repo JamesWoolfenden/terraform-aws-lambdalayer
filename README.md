@@ -40,32 +40,32 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [aws_lambda_layer_version](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_layer_version) |
+| Name | Type |
+|------|------|
+| [aws_lambda_layer_version.layer](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_layer_version) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| compatible\_runtimes | The runtimes that this layer is compatible with | `list(any)` | <pre>[<br>  "nodejs8.10"<br>]</pre> | no |
-| layer\_name | Name of the layer | `string` | n/a | yes |
-| s3\_bucket | The raw name of an S3 bucket without s3:// | `string` | n/a | yes |
-| s3\_key | Path to file | `string` | n/a | yes |
+| <a name="input_compatible_runtimes"></a> [compatible\_runtimes](#input\_compatible\_runtimes) | The runtimes that this layer is compatible with | `list(any)` | <pre>[<br>  "nodejs8.10"<br>]</pre> | no |
+| <a name="input_layer_name"></a> [layer\_name](#input\_layer\_name) | Name of the layer | `string` | n/a | yes |
+| <a name="input_s3_bucket"></a> [s3\_bucket](#input\_s3\_bucket) | The raw name of an S3 bucket without s3:// | `string` | n/a | yes |
+| <a name="input_s3_key"></a> [s3\_key](#input\_s3\_key) | Path to file | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| layer | - The Lambda Layer. |
+| <a name="output_layer"></a> [layer](#output\_layer) | - The Lambda Layer. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
