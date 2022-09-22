@@ -1,6 +1,7 @@
 module "lambdalayer" {
-  source     = "../../"
-  s3_bucket  = var.s3_bucket
-  s3_key     = local.s3_key
-  layer_name = local.layer_name
+  source              = "../../"
+  s3_bucket           = "testbucketineu-west2"
+  s3_key              = "bin.zip"
+  layer_name          = "pike"
+  compatible_runtimes = ["go1.x"]
 }

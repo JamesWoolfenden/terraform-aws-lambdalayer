@@ -2,7 +2,6 @@
 variable "compatible_runtimes" {
   type        = list(any)
   description = "The runtimes that this layer is compatible with"
-  default     = ["nodejs8.10"]
 }
 
 variable "s3_bucket" {
@@ -18,4 +17,9 @@ variable "layer_name" {
 variable "s3_key" {
   type        = string
   description = "Path to file"
+}
+
+variable "statement_id" {
+  type    = string
+  default = "pike-permissions"
 }
