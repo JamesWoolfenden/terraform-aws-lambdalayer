@@ -5,5 +5,4 @@ resource "aws_lambda_layer_version_permission" "pike" {
   statement_id   = var.statement_id
   version_number = aws_lambda_layer_version.layer.version
 }
-
 data "aws_caller_identity" "current" {}

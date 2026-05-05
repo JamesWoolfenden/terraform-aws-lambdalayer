@@ -92,7 +92,9 @@ resource "aws_iam_policy" "terraform_pike" {
             "Action": [
                 "ec2:DescribeAccountAttributes"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor1",
@@ -105,15 +107,20 @@ resource "aws_iam_policy" "terraform_pike" {
                 "lambda:PublishLayerVersion",
                 "lambda:RemoveLayerVersionPermission"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor2",
             "Effect": "Allow",
             "Action": [
-                "s3:GetObject"
+                "s3:GetObject",
+                "s3:GetObjectVersion"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
