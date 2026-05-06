@@ -1,13 +1,11 @@
 # terraform-aws-lambdalayer
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-lambdalayer/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-lambdalayer)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-lambdalayer/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-lambdalayer)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-lambdalayer.svg)](https://github.com/JamesWoolfenden/terraform-aws-lambdalayer/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-lambdalayer.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-lambdalayer/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-lambdalayer/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-lambdalayer&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-lambdalayer/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-lambdalayer&benchmark=INFRASTRUCTURE+SECURITY)
 
 ---
 
@@ -38,7 +36,7 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
@@ -48,7 +46,7 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_lambda_layer_version.layer](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_layer_version) | resource |
 | [aws_lambda_layer_version_permission.pike](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_layer_version_permission) | resource |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
@@ -56,7 +54,7 @@ No modules.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_compatible_runtimes"></a> [compatible\_runtimes](#input\_compatible\_runtimes) | The runtimes that this layer is compatible with | `list(any)` | n/a | yes |
 | <a name="input_layer_name"></a> [layer\_name](#input\_layer\_name) | Name of the layer | `string` | n/a | yes |
 | <a name="input_s3_bucket"></a> [s3\_bucket](#input\_s3\_bucket) | The raw name of an S3 bucket without s3:// | `string` | n/a | yes |
@@ -66,7 +64,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_layer"></a> [layer](#output\_layer) | - The Lambda Layer. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
